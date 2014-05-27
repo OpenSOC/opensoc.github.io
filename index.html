@@ -92,14 +92,14 @@
 
       <h3>Components</h3>
 
-      <p>OpenSOC consists of the following __test__repositories
+      <p>OpenSOC consists of the following repositories
      <img src="https://raw.githubusercontent.com/OpenSOC/opensoc.github.io/master/images/open_source_summary.png" alt="OpenSOC Overview">
       <ul>
-      <li><b>Platform:</b>dedicated to installation and automation scripts for platform confgurations
+      <li><b>Platform:</b>this repository is dedicated to installation and automation scripts for platform confgurations
           This includes ready-made images for one-click OpenSOC installs.  Additionally we will provide the scripts
           for automating installations for Geo, Whois, and CIF enrichment sources
       </li>
-      <li><b>Telemetry:</b>this will consist of software to pcature and ingest packets off the wire into kafka, 
+      <li><b>Telemetry:</b>this repository will consist of software to pcature and ingest packets off the wire into kafka, 
         software to parse out layer 3-7 metadata from packet headers, and Flume agent configurations to cpature any
         additional telemetry and pipe into Apache Kafka.  Additionally this repository will have Storm bolts for 
         parsing, enriching, and alerting on the telemetry.  The scripts for storing data in Hive will also be provided
@@ -108,12 +108,9 @@
         detection of telemetry streams.  It will additionally have the service for packet query and reconstruction into 
         PCAP from HBase store
       </li>
-      <li>Apache Storm 0.9 +</li>
-      <li>Apache Hadoop 2.x (any distribution)</li>
-      <li>Apache Hive 12 + (13 recommended)</li>
-      <li>Apache Hbase 0.94+ </li>
-      <li>Elastic Search 1.1 +</li>
-      <li>MySQL 5.6+ </li>
+      <li><b>UI:</b>this repository will contain web analytics applications written to work with the OpenSOC platform.
+      Each application may have additional set of dependencies (which will be outlined in the installation instrucitons)
+      </li>
       </ul>
       </p>
 
