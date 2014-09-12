@@ -48,19 +48,36 @@
 
       <p class="header">This project is maintained by <a class=
       "header name" href=
-      "https://github.com/OpenSOC">OpenSOC</a></p>
+      "https://github.com/OpenSOC">The OpenSOC Project</a></p>
     </header>
 
     <section>
-      <h3>What is OpenSOC?</h3>
+        <h3>Objective</h3>
+      <p>The OpenSOC project is a collaborative open source development project dedicated to providing an extensible
+         and scalable advanced security analytics tool.  It has strong foundations in the Apache Hadoop Framework and
+         values collaboration for high-quality community-based open source development.</p>
+
+      <p>The OpenSOC project has the following goals:</p>
+
+      <ul>
+          <li>To provide a collaborative open source community for development of an extensible and scalable advanced security analytics tool</li>
+
+          <li>To encourage open communication for additional features and identification of deficiencies for a stable and functionally usable tool</li>
+
+          <li>To identify key feature enhancements to drive technology efforts around efficient security analytics</li>
+      </ul>
+
+      <p>The OpenSOC project welcomes participation from all people and organizations for development, enhancements, and/or implementation support.</p>
       
+      <h3>What is OpenSOC?</h3>
+
       <p>OpenSOC is a Big Data security analytics framework designed to consume and monitor network traffic and machine 
       exhaust data of a data center.  OpenSOC is extensible and is designed to work at a massive scale. 
       </p>
       <p>
       <iframe src="http://www.slideshare.net/slideshow/embed_code/35549810" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
       </p>
-      The framework provides the following capabilities:
+      <p>The framework provides the following capabilities:</p>
       
       <ul>
       <li>Extensible spouts and parsers for attaching OpenSOC to monitor any telemetry source</li>
@@ -73,8 +90,8 @@
       </ul>
       
  
-        OpenSOC is designed to scale up to consume millions of messages per second, enrich them, run them through anomaly
-        detection algorithms, and issue real-time alerts.  
+      <p>OpenSOC is designed to scale up to consume millions of messages per second, enrich them, run them through anomaly
+         detection algorithms, and issue real-time alerts.  
       </p>
       
       <h3>What do I need to run OpenSOC</h3>
@@ -96,12 +113,12 @@
       <p>OpenSOC consists of the following repositories
      <img src="https://raw.githubusercontent.com/OpenSOC/opensoc.github.io/master/images/open_source_summary.png" alt="OpenSOC Overview">
       <ul>
-      <li><b>Platform:</b>this repository is dedicated to installation and automation scripts for platform confgurations
+      <li><b>Platform:</b>this repository is dedicated to installation and automation scripts for platform configurations
           This includes ready-made images for one-click OpenSOC installs.  Additionally we will provide the scripts
           for automating installations for Geo, Whois, and CIF enrichment sources
       </li>
-      <li><b>Telemetry:</b>this repository will consist of software to pcature and ingest packets off the wire into kafka, 
-        software to parse out layer 3-7 metadata from packet headers, and Flume agent configurations to cpature any
+      <li><b>Telemetry:</b>this repository will consist of software to capture and ingest packets off the wire into kafka, 
+        software to parse out layer 3-7 metadata from packet headers, and Flume agent configurations to capture any
         additional telemetry and pipe into Apache Kafka.  Additionally this repository will have Storm bolts for 
         parsing, enriching, and alerting on the telemetry.  The scripts for storing data in Hive will also be provided
       </li>
@@ -110,17 +127,17 @@
         PCAP from HBase store
       </li>
       <li><b>UI:</b>this repository will contain web analytics applications written to work with the OpenSOC platform.
-      Each application may have additional set of dependencies (which will be outlined in the installation instrucitons)
+      Each application may have additional set of dependencies (which will be outlined in the installation instructions)
       </li>
       </ul>
       </p>
 
       <h3>Installation</h3>
 
-      <p>Instructions for installing the UI can be found at the
+      <p>Instructions for obtaining OpenSOC can be found at the
       project's <a href=
-      "https://github.com/OpenSOC/opensoc-ui/blob/master/README.md">
-      README</a>.</p>
+      "https://github.com/OpenSOC/opensoc/wiki">
+      Primary Wiki</a>.</p>
 
   </div>
   <!--[if !IE]><script>fixScale(document);</script><![endif]-->
