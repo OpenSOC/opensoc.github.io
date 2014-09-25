@@ -111,23 +111,22 @@
       <h3>Components</h3>
 
       <p>OpenSOC consists of the following repositories
-     <img src="https://raw.githubusercontent.com/OpenSOC/opensoc.github.io/master/images/open_source_summary.png" alt="OpenSOC Overview">
       <ul>
-      <li><b>Platform:</b>this repository is dedicated to installation and automation scripts for platform configurations
-          This includes ready-made images for one-click OpenSOC installs.  Additionally we will provide the scripts
-          for automating installations for Geo, Whois, and CIF enrichment sources
+      <li><b>OpenSOC-Streaming:</b>This repository contains topologies for processing, enriching, indexing, and 
+      corelating telemetry messages, PCAP reconstruction service, and various other data services.  This module is
+      open source under Apache 2.0 License.  It is available on github: https://github.com/OpenSOC/opensoc-streaming
       </li>
-      <li><b>Telemetry:</b>this repository will consist of software to capture and ingest packets off the wire into kafka, 
-        software to parse out layer 3-7 metadata from packet headers, and Flume agent configurations to capture any
-        additional telemetry and pipe into Apache Kafka.  Additionally this repository will have Storm bolts for 
-        parsing, enriching, and alerting on the telemetry.  The scripts for storing data in Hive will also be provided
+      <li><b>OpenSOC-UI:</b>UI for performing log and network packet analytics, displaying alerts, and errors. This module is
+      open source under Apache 2.0 License.  It is available on github: https://github.com/OpenSOC/opensoc-ui
       </li>
-      <li><b>Analytics:</b>this repository will have statistical models and machine learning algorithms for anomaly
-        detection of telemetry streams.  It will additionally have the service for packet query and reconstruction into 
-        PCAP from HBase store
+      <li><b>OpenSOC-Aggragation:</b> This repository contains topologies, scripts, MR jobs, Hive jobs, Pig jobs for back-end
+      data processing and Storm-based real-time message feature extraction, stream summarization, and stream sketches.
+      This module is available to select Cisco technology partners and MTD customers.  It is available upon request via a
+      private github repository.
       </li>
-      <li><b>UI:</b>this repository will contain web analytics applications written to work with the OpenSOC platform.
-      Each application may have additional set of dependencies (which will be outlined in the installation instructions)
+      <li><b>OpenSOC-ML:</b>This repository contains a real-time Storm-based scoring framework for statistical models
+      for anomaly detection as well as ML models for anomaly classification.  This module is available to select Cisco technology
+      partners and MTD customers.  It is available upon request via a private github repository.
       </li>
       </ul>
       </p>
